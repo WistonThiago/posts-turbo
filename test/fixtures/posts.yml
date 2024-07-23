@@ -5,5 +5,5 @@ one:
   body: MyText
 
 two:
-  title: MyString
-  body: MyText
+  title: Title 2
+  body: Text of the second post
