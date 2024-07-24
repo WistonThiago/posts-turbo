@@ -12,7 +12,7 @@
 
   <%= form.input :title, input_html: { autofocus: true } %>
   <%= form.input :body %>
-  <%= link_to "Cancel", root_path, class: "btn btn--light", data: { turbo_prefetch: false } %>
+  <%= link_to "Cancel", posts_path, class: "btn btn--light", data: { turbo_prefetch: false } %>
 
   <%= form.submit class: "btn btn--primary" %>
 <% end %>

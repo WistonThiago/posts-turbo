@@ -1,7 +1,7 @@
 <main class="container">
   
   <div class="header">
-    <%= link_to "Back to posts", root_path, class: "btn btn--primary", data: { turbo_prefetch: false }%>
+    <%= link_to "Back to posts", posts_path, class: "btn btn--primary", data: { turbo_prefetch: false }%>
   </div>
 
   <%= render @post %>
