@@ -1,12 +1,9 @@
-<div id="<%= dom_id post %>">
-  <p>
-    <strong>Title:</strong>
-    <%= post.title %>
-  </p>
+<div id="<%= dom_id post %>" class="post">
+  <%= link_to post.title, post_path(post), data: { turbo_frame: "_top", turbo_prefetch: false } %>
+  <%= post.body %>
 
-  <p>
-    <strong>Body:</strong>
-    <%= post.body %>
-  </p>
-
+  <div class="post__actions">
+    <%= button_to "Delete", post_path(post), method: :delete, class: "btn btn--light" %>
+    <%= link_to "Edit", edit_post_path(post), data: { turbo_prefetch: false },class: "btn btn--light" %>
+  </div>
 </div>
